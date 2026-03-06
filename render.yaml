@@ -12,8 +12,8 @@ services:
         value: production
       
 
-       -key: PORT
-        value: 3000
+      -  key: PORT
+         value: 3000
 
       - key: ATLAS_URL
         sync: false
