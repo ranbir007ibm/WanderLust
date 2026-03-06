@@ -8,10 +8,9 @@ services:
     autoDeploy: true
 
     envVars:
-      -key: NODE_ENV
+      - key: NODE_ENV
         value: production
-      -key: SECRET
-        sync: false
+      
 
        -key: PORT
         value: 3000
