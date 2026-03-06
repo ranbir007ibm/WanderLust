@@ -1,0 +1,32 @@
+<% layout("/layouts/bolierplate")%>
+
+    <div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h1 class="col-6 offset-3">SignUp on Wanderlust</h1>
+        <form action="/signup" method="post" novalidate class="needs-validation">
+        <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+  <input type="text" name="username" placeholder="Enter a UserName" class="form-control" required id="username">
+    <div class="valid-feedback">
+    Username Looks good!
+    </div>
+  </div>
+    <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+  <input type="email" name="email" placeholder="Enter a Email" class="form-control" required id="email">
+    <div class="valid-feedback">
+    Email Looks good!
+    </div>
+    </div>
+      <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+  <input type="password" name="password" placeholder="Enter a Password" class="form-control" required id="password">
+    <div class="valid-feedback">
+    Password Looks good!
+    </div>
+    </div>
+    <button class="btn btn-success">SignUp</button>
+         </form>
+    </div>
+    </div>
+
