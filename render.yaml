@@ -10,6 +10,11 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      -key:SECRET
+        sync: false
+
+       -key: PORT
+        value: 3000
 
       - key: ATLAS_URL
         sync: false
