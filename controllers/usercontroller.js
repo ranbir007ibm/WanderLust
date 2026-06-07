@@ -12,7 +12,7 @@ module.exports.signupPageLogic=async (req, res, next) => {
     req.login(registeredUser, (err) => {
       if (err) return next(err);
 
-      req.flash("success", "Welcome to Wanderlust");
+      req.flash("success", "Welcome to World Explorer");
       res.redirect("/listing");
     });
 
@@ -25,7 +25,7 @@ module.exports.loginPage=(req, res) => {
   res.render("user/login");
 };
 module.exports.loginPageLogic=(req, res) => {
-    req.flash("success", "Welcome back to WanderLust");
+    req.flash("success", "Welcome back to World Explorer");
     res.redirect(res.locals.redirectUrl || "/listing");
   };
   module.exports.logout=(req, res, next) => {
